@@ -5,7 +5,7 @@
 	app.controller('ToBuyController', ['$scope', 'ShoppingListCheckOffService', function($scope, ShoppingListCheckOffService) {
 
 		$scope.items = ShoppingListCheckOffService.toBuy;
-		
+		// When bought button is clicked.
 		$scope.bought = function(index) {
 			ShoppingListCheckOffService.boughtFunction(index);
 			$scope.buyListStatus = ($scope.items.length === 0)? true: false;
@@ -15,7 +15,7 @@
 
 	app.controller('AlreadyBoughtController', ['$scope', 'ShoppingListCheckOffService', function($scope, ShoppingListCheckOffService) {
 		$scope.items = ShoppingListCheckOffService.bought;
-		
+		// Watching the length of bought items array.
 		$scope.$watch('items.length',function(){
 			$scope.boughtListStatus = ($scope.items.length === 0)? true : false;
 		})

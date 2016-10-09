@@ -3,7 +3,7 @@
 
 <head>
   <script src="scripts/angular.min.js"></script>
-  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <link rel="stylesheet" href="styles/style.css" /> 
   <script src="scripts/app.js"></script>
 </head>
 
@@ -19,15 +19,15 @@
         <button ng-click="bought($index);">Bought</button>
       </li>
     </ol>
-    <p ng-if="buyListStatus"> Everything is bought </p>
+    <p class="green" ng-if="buyListStatus"> Everything is bought </p>
   </div>
 
 
   <!--alreadyBoughtList-->
-  <div ng-controller="AlreadyBoughtController">
+  <div id="secondDiv" ng-controller="AlreadyBoughtController">
     <h2>Already Bought List</h2>
     <ol>
-      <p ng-if="boughtListStatus"> Nothing bought yet </p>
+      <p class="red" ng-if="boughtListStatus"> Nothing bought yet </p>
       <li ng-repeat="item in items">
 	  
 	  <p>Bought  {{item.quantity}}  {{item.itemName}}</p>

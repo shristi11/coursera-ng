@@ -1,6 +1,11 @@
+body{
+	background-color: lime;
+	width: 600px;
+	margin: 0 auto;
+}
 .green {
 	border: 2px solid green;
-	color: green;
+	color: olive;
 	padding: 5px;
 }
 
@@ -9,15 +14,9 @@
 	color: red;
 	padding: 5px;
 }
-h1 {
+h1, h2 {
 	text-align: center;
 }
-#lunch-menu {
-	background-color: lightgray;
-	color: blue;
-}
-
-h5 {
-	color: blue;
-	background-color: lightyellow;
+#secondDiv{
+	float: right;
 }
