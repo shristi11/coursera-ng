@@ -1,0 +1,23 @@
+.green {
+	border: 2px solid green;
+	color: green;
+	padding: 5px;
+}
+
+.red {
+	border: 2px solid red;
+	color: red;
+	padding: 5px;
+}
+h1 {
+	text-align: center;
+}
+#lunch-menu {
+	background-color: lightgray;
+	color: blue;
+}
+
+h5 {
+	color: blue;
+	background-color: lightyellow;
+}

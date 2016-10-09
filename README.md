@@ -1,1 +1,1 @@
-# yakoov-angular
+# angular-spa-coursera
