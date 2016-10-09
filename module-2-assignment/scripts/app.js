@@ -45,7 +45,7 @@
 		
 		this.boughtFunction = function(index) {
 		var boughtArray = this.toBuy.splice(index, 1);
-		this.bought.push(boughtArray[0]);
+		this.bought.push(boughtArray[index]);
 	  };
 	  
 	});
