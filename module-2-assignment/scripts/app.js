@@ -8,7 +8,7 @@
 		// When bought button is clicked.
 		this.bought = function(index) {
 			ShoppingListCheckOffService.boughtFunction(index);
-			this.buyListStatus = (this.items.length === 0)? true: false;
+			//this.buyListStatus = (this.items.length === 0)? true: false;
 		};
 	
 	}]);
@@ -45,7 +45,7 @@
 		
 		this.boughtFunction = function(index) {
 		var boughtArray = this.toBuy.splice(index, 1);
-		this.bought.push(boughtArray[index]);
+		this.bought.push(boughtArray[0]);
 	  };
 	  
 	});
