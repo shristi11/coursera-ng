@@ -2,23 +2,23 @@
 (function() {
 
 	var app = angular.module('ShoppingListCheckOff', []);
-	app.controller('ToBuyController', ['$scope', 'ShoppingListCheckOffService', function($scope, ShoppingListCheckOffService) {
+	app.controller('ToBuyController', ['ShoppingListCheckOffService', function(ShoppingListCheckOffService) {
 
-		$scope.items = ShoppingListCheckOffService.toBuy;
+		this.items = ShoppingListCheckOffService.toBuy;
 		// When bought button is clicked.
-		$scope.bought = function(index) {
+		this.bought = function(index) {
 			ShoppingListCheckOffService.boughtFunction(index);
-			$scope.buyListStatus = ($scope.items.length === 0)? true: false;
+			this.buyListStatus = (this.items.length === 0)? true: false;
 		};
 	
 	}]);
 
-	app.controller('AlreadyBoughtController', ['$scope', 'ShoppingListCheckOffService', function($scope, ShoppingListCheckOffService) {
-		$scope.items = ShoppingListCheckOffService.bought;
+	app.controller('AlreadyBoughtController', ['ShoppingListCheckOffService', function(ShoppingListCheckOffService) {
+		this.items = ShoppingListCheckOffService.bought;
 		// Watching the length of bought items array.
-		$scope.$watch('items.length',function(){
-			$scope.boughtListStatus = ($scope.items.length === 0)? true : false;
-		})
+		/* this.$watch('items.length',function(){
+			this.boughtListStatus = (this.items.length === 0)? true : false;
+		}) */
 		
 	}]);
 

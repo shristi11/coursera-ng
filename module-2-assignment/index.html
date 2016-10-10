@@ -12,23 +12,23 @@
 
 
   <!--toBuyList-->
-  <div id="firstDiv" ng-controller="ToBuyController">
+  <div id="firstDiv" ng-controller="ToBuyController as TBC">
     <h2>To Buy List</h2>
     <ol>
-      <li ng-repeat="item in items">Buy {{item.quantity}}  {{item.itemName}} 
-        <button ng-click="bought($index);">Bought</button>
+      <li ng-repeat="item in TBC.items">Buy {{item.quantity}}  {{item.itemName}} 
+        <button ng-click="TBC.bought($index);">Bought</button>
       </li>
     </ol>
-    <p class="green" ng-if="buyListStatus"> Everything is bought </p>
+    <p class="green" ng-if="!TBC.items.length"> Everything is bought </p>
   </div>
 
 
   <!--alreadyBoughtList-->
-  <div id="secondDiv" ng-controller="AlreadyBoughtController">
+  <div id="secondDiv" ng-controller="AlreadyBoughtController as ABC">
     <h2>Already Bought List</h2>
     <ol>
-      <p class="red" ng-if="boughtListStatus"> Nothing bought yet </p>
-      <li ng-repeat="item in items">
+      <p class="red" ng-if="!ABC.items.length"> Nothing bought yet </p>
+      <li ng-repeat="item in ABC.items">
 	  
 	  <p>Bought  {{item.quantity}}  {{item.itemName}}</p>
 	  
