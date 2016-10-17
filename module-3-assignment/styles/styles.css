@@ -54,6 +54,7 @@ input[type="text"] {
 	color: red;
 	background-color: olive;
 	height: 50px;
+	padding-top: 10px;
 }
 .result{
 	color: purple;
