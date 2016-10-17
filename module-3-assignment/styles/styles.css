@@ -52,5 +52,5 @@ input[type="text"] {
 }
 .error{
 	color: red;
-	background: yellow;
+	background-color: yellow;
 }
