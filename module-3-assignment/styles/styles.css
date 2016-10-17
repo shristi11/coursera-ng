@@ -54,3 +54,7 @@ input[type="text"] {
 	color: red;
 	background-color: yellow;
 }
+.result{
+	color: purple;
+	background-color: lightgreen;
+}
