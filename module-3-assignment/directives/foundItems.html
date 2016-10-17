@@ -1,5 +1,5 @@
-	<div>
-		<div>
+	<div class="row">
+		<div class="col-xs-12">
 			<ol>
 				<li ng-repeat="item in items">
 					{{item.name }}, {{ item.shortName }}, {{ item.description}}
@@ -7,7 +7,7 @@
 				</li>
 			</ol>
 		</div>
-		<div class="error" ng-if="!items.length">nothing found
+		<div class="error col-xs-12" ng-if="!items.length">nothing found
 		</div> 
 		
 	</div> 
