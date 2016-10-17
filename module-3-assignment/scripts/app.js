@@ -3,7 +3,7 @@
 	
 	// Controller
 	app.controller('NarrowItDownController', ['$scope', 'MenuSearchService', function($scope, MenuSearchService){
-		$scope.searchTerm = 'soup';
+		$scope.searchTerm = '';
     
 		$scope.search = function(searchTerm) {
 			console.log('Searching for ' + searchTerm);
