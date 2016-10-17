@@ -3,7 +3,7 @@
 		<table class="table table-stripped">
 			<thead>
 				<tr>
-					<th>ShortName</th><th>Name</th><th>Description</th>
+					<th>ShortName</th><th>Name</th><th>Description</th><th> Dont want it?</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -11,6 +11,8 @@
 					<td>{{item.short_name}}</td>
 					<td>{{item.name}}</td>
 					<td>{{item.description}}</td>
+					<td><button class="btn btn-warning" ng-click="onRemove(item)">Remove item</button> </td>
+					
 				</tr>
 			</tbody>
 		</table>
@@ -22,7 +24,7 @@
 			</ol -->
 		</div>
 		<div class="col-xs-12 col-sm-3">
-			<button class="btn btn-warning" ng-click="onRemove(item)">Remove item</button> 
+			
 		</div>
 		<div class="error col-xs-12" ng-if="!items.length"> Nothing found
 		</div> 
