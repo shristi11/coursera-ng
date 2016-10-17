@@ -1,5 +1,5 @@
 	<div class="row">
-		<div class="col-xs-12">
+		<div class="col-xs-12 col-sm-9">
 		<table class="table table-stripped">
 			<thead>
 				<tr>
@@ -17,9 +17,12 @@
 			<!-- <ol>
 				<li class="result" ng-repeat="item in items">
 					{{item.name }}, {{ item.shortName }}, {{ item.description}}
-					<br><button class="btn btn-warning" ng-click="onRemove(item)">Remove item</button> 
+					<button class="btn btn-warning" ng-click="onRemove(item)">Remove item</button> 
 				</li>
 			</ol -->
+		</div>
+		<div class="col-xs-12 col-sm-3">
+			<button class="btn btn-warning" ng-click="onRemove(item)">Remove item</button> 
 		</div>
 		<div class="error col-xs-12" ng-if="!items.length"> Nothing found
 		</div> 
