@@ -51,8 +51,8 @@ input[type="text"] {
   }
 }
 .error{
-	color: red;
-	background-color: olive;
+	color: olive;
+	background-color: orange;
 	height: 50px;
 	padding-top: 10px;
 }
