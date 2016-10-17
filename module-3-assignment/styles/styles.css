@@ -57,4 +57,5 @@ input[type="text"] {
 .result{
 	color: purple;
 	background-color: lightgreen;
+	padding: 5px;
 }
